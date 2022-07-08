@@ -11,7 +11,8 @@
     "lint:js": "eslint .",
     "lint:ts": "tsc --noEmit",
     "lint": "npm run lint:js && npm run lint:ts",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "coverage": "vitest run --coverage"
   },
   "author": "Omkar Shelar",
