@@ -1,0 +1,33 @@
+{
+  "name": "lru-cache",
+  "version": "0.0.1",
+  "description": "A simple LRU Cache",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "lint:js": "eslint .",
+    "lint:ts": "tsc --noEmit",
+    "lint": "npm run lint:js && npm run lint:ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "author": "Omkar Shelar",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.6.2",
+    "@parcel/transformer-typescript-types": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "c8": "^7.11.3",
+    "eslint": "^8.19.0",
+    "eslint-plugin-import": "^2.26.0",
+    "parcel": "^2.6.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vitest": "^0.17.0"
+  },
+  "dependencies": {}
+}
