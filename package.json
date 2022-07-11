@@ -1,6 +1,10 @@
 {
-  "name": "lru-cache",
-  "version": "0.0.1",
+  "name": "another-lru-cache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omkarshelar/lru-cache.git"
+  },
+  "version": "0.0.2",
   "description": "A simple LRU Cache",
   "source": "src/index.ts",
   "main": "dist/main.js",
