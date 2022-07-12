@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/omkarshelar/lru-cache.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple LRU Cache",
   "source": "src/index.ts",
   "main": "dist/main.js",
