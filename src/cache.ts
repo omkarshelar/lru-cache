@@ -46,7 +46,7 @@ export default class Cache<T> {
   }
 
   set(key: string, value: T) {
-    if (this.getSize() === this.maxSize && !this.cache[key]) {
+    if (this.getSize() === this.maxSize && !this.cache[key]) { // Max size reached and new K-V pair has to be added
       this.evict();
     }
     this.cache[key] = {
@@ -55,7 +55,7 @@ export default class Cache<T> {
       nextEntry: null,
     };
     if (this.newestEntry) {
-      this.cache[this.newestEntry].nextEntry = key;
+      this.cache[this.newestEntry].nextEntry = key; // Change the next entry of the old newestEntry
     }
     this.newestEntry = key;
     if (this.getSize() === 1) {
